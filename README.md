@@ -26,7 +26,8 @@
                 <form role="search" action="#">
                     <div class="input-section">
                       <span class="input-section-label">
-                        <i class="fa-solid fa-location-dot"> </i>
+                        <i class="fa-solid fa-location-dot"> 
+                        </i>
                       </span>
                       
                       <input
@@ -69,7 +70,7 @@
                             <span>Choisissez un restaurant</span>
                           </a>
                       </li>
-                   
+                    </ul>
                           <li>
                            <a href="Composez votre menu">
                             <i class="fa-solid fa-person" ></i>
@@ -77,7 +78,7 @@
                            </a>
                           </li>
                      
-                     
+                      <ul>
                           <li>
                            <a href="Dégustez au restaurant">
                             <i class="fa-solid fa-heart" ></i>
@@ -94,7 +95,7 @@
             </section>
                   
             <div class="restaurants">
-               <section id="lien-activites" class="restaurants-options">
+               <section id="lien-restaurants" class="restaurants-options">
                   <div>
 
 
@@ -165,7 +166,7 @@
                   </div>
                </section>
             </div>
-         </main>
+       
          <footer>
             <section>
                <h2>ohmyfood</h2>
@@ -178,4 +179,5 @@
          </footer>
       </div>
    </body>
+     </main>
 </html>
