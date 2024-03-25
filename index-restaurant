@@ -163,7 +163,7 @@
                   </div>
                </section>
             </div>
-         </main>
+       
          <footer>
             <section>
                <h2>ohmyfood</h2>
@@ -176,4 +176,5 @@
          </footer>
       </div>
    </body>
+  </main>
 </html>
