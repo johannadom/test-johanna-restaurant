@@ -273,7 +273,7 @@ header img {
 	padding: 0; /* suppression du padding */
 	display: flex;
 	align-items: center;
-	gap: 10px;
+
 }
 
 #menu p {
@@ -441,7 +441,7 @@ header img {
 }
 
 
-.restaurants-options-cards .card-rating {
+.restaurants-cards .card-rating {
 	margin-bottom: 5px;
 }
 
