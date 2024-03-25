@@ -1,0 +1,489 @@
+/****** General ***********/
+* {
+	Roboto: "roboto" sans-serif;
+}
+
+:root {
+	--main-color:#9356DC;
+	--black-color: #FF79DA;
+	--white-color: #99E2D0;
+}
+
+/****** défilement fluide de la page html ***********/
+html {
+	scroll-behavior: smooth;
+}
+/* icônes */
+.fa-solid {
+	color: var(--main-color) ;
+	gap: 10px;
+}
+/* étoiles - coeur à tester  */
+.fa-solid .neutral-star {
+	color: var(--main-color);
+}
+/* picto input localisation  */
+.fa-solid.fa-location-dot {
+	padding: 16px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+/* picto rond i info  */
+.fa-info {
+	border: 1px solid gray;
+	border-radius: 50%;
+	padding: 4px 9px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+
+h2{
+	font-size: 18px;
+	margin: 0px;
+}
+h3{
+	font-size: 18px;
+	margin: 0px;
+}
+/* sous titre police */
+h3 {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.section-title {
+	margin: 0;
+	font-size: 22px;
+}
+
+.main-container {
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+	.main-container {
+		padding: 0;
+	}}
+
+
+.card {
+	background-color: white;
+	border-radius: 20px;
+	padding: 0px;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+	object-fit: cover;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.card img {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 20px;
+		width: 100%;
+		height: 70%;
+		border-color: #000;
+	}}
+
+.card-title {
+	font-size: 16px;
+	display: flex;
+}
+
+.card-content {
+	padding: 0 15px;
+}
+
+.euro {
+	font-weight: 700;
+}
+
+.neutral-star {
+	color: var(--main-bg-color)
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+	}}
+
+/* logo booki */
+header img {
+	height: 20px;
+	margin: 30px 0;
+}
+
+
+.text-subtitle p {
+	margin-top: 0;
+}
+
+/* DIV : barre de recherche */
+.input-section {
+	display: flex;
+	border: 0;
+	height: 70px;
+	width: 377px;
+}
+
+@media screen and (max-width: 768px) {
+	.input-section {
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}}
+	
+/* bloc 1 picto localisation de la barre de recherche  */
+.input-section .input-section-label {
+	background-color: var(--main-bg-color);
+	padding: 16px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+/* bloc 2 picto de localisation de la barre de recherche  */
+.input-section .input-section-label i {
+	color: black;
+	font-size: 18px;
+	padding: 10px;
+}
+
+/* bloc 1 Marseille, France de la barre de recherche */
+.input-section .input-section-field {
+	padding: 14px 24px;
+	border: 1px solid var(--main-bg-color);
+	border-right: 0;
+	width: 100%;
+}
+
+/* texte Marseille, France de la barre de recherche */
+.input-section-field::placeholder {
+	color: var(--black-color);
+	font-weight: 700;
+	font-size: 1.125rem;/* 18px */
+}
+
+@media screen and (max-width: 768px) {
+	.input-section-field [type="submit"] {
+		width: 100%;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}}
+
+/* barre de recherche formulaire 1 */
+.input-section input[type="submit"] {
+	background-color: var(--main-color);
+	color: var(--white-color);
+	font-weight: 700;
+	font-size: 18px;
+	padding: 14px 16px;
+	border: 1px solid var(--main-color);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	display: block;
+	height: 70px;
+	
+}
+
+@media screen and (max-width: 768px) {
+	.input-section input[type="submit"] {
+		display: none;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}}
+
+/* bouton RECHERCHER font awesome loupe */
+.input-section button {
+	display: none;
+	background-color: var(--main-color);
+	font-weight: 700;
+	font-size: 1.125rem;
+	/* 18px */
+	padding: 14px 16px;
+	border: 1px solid var(--main-color);
+	border-radius: 15px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	color: var(--white-color);
+	height: 70px;
+	width: 80px;	
+}
+
+@media screen and (max-width: 768px) {
+	.input-section button {
+		display: block;
+	}}
+
+/* barre RECHERCHER cliquable font awesome loupe */
+.input-section input[type="submit"]:hover
+.input-section button:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.input-section input[type="submit"]:hover {
+		display: none;
+
+	}}
+
+.input-section button i {
+	color: var(--white-color);
+}
+
+
+/****** RESTAURANTS ***********/
+/* DIV  (bouton 1, bouton 2, bouton 3, */ 
+
+#menu ul {
+	padding: 0; /* suppression du padding */
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#menu p {
+	margin: 35px 0;
+}
+#menu ul .fa-solid {
+	margin-right: 10px;
+}
+
+
+@media screen and (max-width: 794px) {
+	#menu ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+		width: 100%;
+	}}
+
+
+#menu ul li:hover {
+	background-color: var(--filter-bg-color);
+	/* Couleur de fond au survol */
+}
+
+
+/* DIV bulles ( bouton 1, bouton 2, bouton 3 ) */
+.filtre {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 35px;
+	margin-left: 15px;
+	gap: 15px;
+}
+
+/* DIV filtre et DIV ( bouton 1, bouton 2, bouton 3 )  */
+.filtre>h3,
+.filtre>ul {
+	margin: 0px;	
+	
+}
+
+@media screen and (max-width: 768px) {
+	.filtre {
+		margin-left: 0;
+	}}
+
+@media screen and (max-width: 1024px) {
+	.filtre {
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}}
+
+/* bulles ( bouton 1, bouton 2, bouton 3 )*/
+#menu li {
+	border: 2px solid black;
+	border-radius: 50px;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	gap: 20px;
+	align-items: center;	
+}
+#menu li .card {
+    border-radius: 15px;
+    border-color: #000;
+}
+@media screen and (max-width: 1440px) {
+	#menu li {
+		font-size: 14px;
+		gap: 10px;
+	}}
+
+@media screen and (max-width: 768px) {
+	#menu li {
+		padding: 15px 11px;
+		font-size: 14px;
+		gap: 6px;
+	}}
+
+/* /* Couleur de fond au survol des bulles ( bouton 1, bouton 2, bouton 3 ) */
+#menu li a:hover {
+	background-color: var(--filter-bg-color);
+	/* Couleur de fond au survol */
+}
+/* div picto bulle chiffre : bouton 1, bouton 2, bouton 3, */
+.info-logement {
+	display: flex;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.info-logement i {
+	font-size: 13px;
+	display: block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid var(--light-gray);
+	border-radius: 100px;
+	margin-right: 10px;
+	text-align: center;			
+}
+
+
+/****** RESTAURANTS ***********/
+.restaurants section {
+	background-color: var(--secondary-main-bg-color);
+	border-radius: 20px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.restaurants-options-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.restaurants-options-cards a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: calc(25% - 15px);
+}
+
+@media screen and (max-width: 768px) {
+	.activite-marseille-cards a {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}}
+
+.activite-marseille-cards .card {
+	height: 100%;
+	border: 0;
+}
+
+.activite-marseille-cards .card img {
+	height: 200px;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.activite-marseille-cards .card img {
+		width: 100%;
+		display: block;
+		flex-direction: column;
+		height: 140px;
+		border-radius: 15px 15px 0px 0;
+	}}
+
+.activite-marseille-cards .card-title {
+	margin: 20px 0;
+}
+
+
+.activites-cards .card-rating {
+	margin-bottom: 5px;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: var(--main-bg-color);
+	padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+		margin: 0;
+		padding: 20px;
+	}}
+
+
+/* Le code ci-dessous correspond à la version responsive globale */
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+	.hebergements {
+		width: 100%;
+	}
+
+	.populaires {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+
+	.populaires-cards .card-title {
+		font-size: 14px;
+	}
+
+	.populaires-cards .card-subtitle {
+		font-size: 13px;
+	}}
