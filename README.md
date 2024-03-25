@@ -91,15 +91,15 @@
               </div>
             </section>
                   
-            <div class="activites">
-               <section id="lien-activites" class="activite-marseille">
+            <div class="restaurants">
+               <section id="lien-activites" class="restaurants-options">
                   <div>
 
 
 
                      <h2>Restaurants</h2>
                   </div>
-                  <div class="activite-marseille-cards">
+                  <div class="restaurants-options-cards">
                      <a href="#">
                         <article class="card">
                            <img
